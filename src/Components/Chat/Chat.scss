@@ -1,0 +1,100 @@
+$primary-color: #29c303;
+$secondary-color: rgba(0, 0, 0, 0.6);
+
+.main-container {
+  background-color: $primary-color;
+  color: $secondary-color;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 300px;
+  height: 600px;
+  border: 1px solid red;
+  color: $primary-color;
+  background-color: $secondary-color;
+  position: fixed;
+  bottom: 60px;
+  left: 30px;
+
+  .btn-closechat:hover {
+    opacity: 1;
+    transition: all 0.2s linear;
+    transform: scale(1.01);
+    color: $secondary-color;
+    cursor: pointer;
+  }
+
+  .tittle-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    .tittle-menu {
+      font-size: medium;
+      text-align: center;
+    }
+  }
+
+  .menu-items {
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    li {
+      margin: 10px 0 10px 0;
+    }
+  }
+
+  li {
+    list-style: none;
+  }
+  li:hover {
+    opacity: 1;
+    transition: all 0.2s linear;
+    transform: scale(1.01);
+    color: $secondary-color;
+    cursor: pointer;
+    // border: 1px solid $primary-color;
+  }
+
+  .bottom-navigation {
+    display: flex;
+    justify-content: center;
+    ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 10px;
+      position: fixed;
+      bottom: 50px;
+      width: 250px;
+    }
+  }
+  .new-user-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    input {
+      width: 200px;
+      margin: 5px;
+    }
+
+    button {
+      padding: 10px;
+      width: 90px;
+      height: 40px;
+    }
+  }
+}
+.btn-openchat {
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+}
+
+//////
+/// .conatainer-class button {
+///  color: etc;
+/// }
